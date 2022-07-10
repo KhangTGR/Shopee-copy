@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.css">
 
 </head>
 
@@ -24,17 +25,46 @@
             <div class="grid">
                 <!--============================Navigation Bar============================-->
                 <nav class="header-navbar">
+                    <!--============================Left Nav============================-->
                     <ul class="header-navbar__list">
-                        <li class="header-navbar__item header-navbar__item--border">Vào cửa hàn trên ứng dụng Shopee</li>
-                        <li class="header-navbar__item">Kết nối</li>
-                    </ul>
-    
-                    <ul class="header-navbar__list">
-                        <li class="header-navbar__item">
-                            <a href="" class="header-navbar__item-link">Thông báo</a>
+                        <!--============================QR Link============================-->
+                        <li class="header-navbar__item header-navbar__item-qr header-navbar__item--border">
+                            Vào cửa hàn trên ứng dụng Shopee
+                            <div class="header-navbar__QR">
+                                <img class="header-navbar__QR-img" src="./assets/img/shopee_link_QR.png" alt="QR Code">
+                                <div class="header-navbar__app">
+                                    <a href="" class="header-navbar__app-link-download">
+                                        <img class="header-navbar__app-link" src="./assets/img/google_play.png" alt="Google Play">
+                                    </a>
+                                    <a href="" class="header-navbar__app-link-download">
+                                    <img class="header-navbar__app-link" src="./assets/img/app_store.png" alt="App Store">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="header-navbar__item">
-                            <a href="" class="header-navbar__item-link">Trợ giúp</a>
+                            <span class="header-navbar__item--no-pointer">Kết nối</span>
+                            <a href="" class="header-navbar__icon-link">
+                                <i class="header-navbar_icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header-navbar__icon-link">
+                                <i class="header-navbar_icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--============================Right Nav============================-->
+                    <ul class="header-navbar__list">
+                        <li class="header-navbar__item">
+                            <a href="" class="header-navbar__item-link">
+                                <i class="header-navbar_icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="" class="header-navbar__item-link">
+                                <i class="header-navbar_icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
                         </li>
                         <li class="header-navbar__item header-navbar__item--strong header-navbar__item--border">Đăng ký</li>
                         <li class="header-navbar__item header-navbar__item--strong">Đăng nhập</li>

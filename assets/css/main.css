@@ -12,11 +12,23 @@
 .header-navbar__list {
     list-style: none;
     padding-left: 0;
+    margin-top: 8px;
 }
 
 .header-navbar__item {
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
+}
+
+.header-navbar__item-qr:hover .header-navbar__QR {
+    display: block;
+}
+
+.header-navbar__icon-link {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-top: -4px;
 }
 
 .header-navbar__item,
@@ -28,8 +40,22 @@
     font-weight: 300;
 }
 
+.header-navbar__item,
+.header-navbar__item-link, 
+.header-navbar__icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-navbar__item:hover,
+.header-navbar__icon-link:hover,
+.header-navbar__item-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .header-navbar__item--strong {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header-navbar__item--border::after {
@@ -41,4 +67,52 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header-navbar_icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.header-navbar__item--no-pointer {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/*==========================QR link==========================*/
+.header-navbar__QR {
+    width: 185px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header-navbar__QR::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    left: 0;
+    right: 0;
+    top: -10px;
+}
+
+.header-navbar__QR-img {
+    width: 100%;
+}
+
+.header-navbar__app {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.header-navbar__app-link {
+    height: 16px;
 }
