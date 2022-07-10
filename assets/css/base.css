@@ -1,5 +1,7 @@
 /*==========================Common Values==========================*/
 :root {
+    --primary-color: rgb(255, 87, 36);
+    --primary-color-fade: rgba(255, 87, 36, 0.1);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
