@@ -249,6 +249,108 @@
     display: block;
 }
 
+/*==========================Authentic Form==========================*/
+.auth-form {
+    width: 500px;
+}
+
+.auth-form__container {
+    padding: 0 32px;
+    padding-top: 10px;
+}
+
+.auth-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form-header__heading {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form-header__switch-btn {
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.auth-form-header__content {
+}
+
+.auth-form__input {
+    margin-top: 16px;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    border: var(--border-color) solid 1px;
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #767676;
+}
+
+.auth-form__aside {
+    margin-top: 18px;
+    padding: 0 8px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.auth-form_policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-form__control {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__control--space-right {
+    margin-right: 8px
+}
+
+.auth-form__contact {
+    background-color: #ececec;
+    padding: 8px 32px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__contact--facebook {
+    background-color: #4267B2;
+    color: var(--white-color);
+}
+
+.auth-form__contact--google {
+    color: var(--text-color);
+}
+
+.auth-form__contact--title {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
 
 .header-navbar__login-form {
     top: -3px;

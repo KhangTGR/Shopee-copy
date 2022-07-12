@@ -5,6 +5,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -64,6 +65,50 @@ html {
 .modal-body {
     background-color: var(--white-color);
     margin: auto;
+    position: relative;
     z-index: 1;
     border-radius: 5px;
+}
+
+/*==========================Button Style==========================*/
+.btn {
+    min-width: 140px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 2px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn--hover:hover {
+    background-color: #ececec;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+.btn.btn--with-icon {
+    padding: 0 10px;
+    width: 49%;
 }
